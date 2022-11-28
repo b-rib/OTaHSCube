@@ -42,7 +42,7 @@ The **parameters.jl** file is a julia lang file containing the following definit
 | v_bat 			| $V_b$				| battery voltage
 
 ### Example file
-The \$(T)\_\$(jobs).jl file is a julia lang file containing the following definitions:
+The (T)\_(jobs).jl file is a julia lang file containing the following definitions:
 
 | Variable (Code) 	| Variable (Paper)	| Definition		|
 |-------------------|-------------------|-------------------|
@@ -81,9 +81,9 @@ The \$(T)\_\$(jobs).jl file is a julia lang file containing the following defini
  
 Two output files are generated, namely:
  
-* \$(T)_\$(jobs)_EN.pdf
+* (T)\_(jobs)_EN.pdf
 	+ Graph of: **Energy balance** (W; primary axis) and **SoC** (%; secondary axis) vs. **time** (min)
-* \$(T)_\$(jobs)_SCH_TMP.pdf
+* (T)\_(jobs)_SCH_TMP.pdf
 	+ Graph of: **jobs/tasks activations** ($x$) vs. **time**
 
 
