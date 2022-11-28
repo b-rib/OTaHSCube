@@ -42,7 +42,7 @@ The **parameters.jl** file is a julia lang file containing the following definit
 | v_bat 			| $V_b$				| battery voltage
 
 ### Example file
-The **\$(T)_\$(jobs).jl** file is a julia lang file containing the following definitions:
+The \$(T)_\$(jobs).jl file is a julia lang file containing the following definitions:
 
 | Variable (Code) 	| Variable (Paper)	| Definition		|
 |-------------------|-------------------|-------------------|
