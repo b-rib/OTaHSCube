@@ -1,15 +1,16 @@
-using JuMP, Gurobi, PyCall
+using JuMP, Gurobi, PyCall, Distributed
 
 jobs = 7
 T = 48
-
 just_plot = false
 
-if !just_plot
-    include("params.jl")
-    include("examples/$(T)_$(jobs).jl")
-    include("fvm_temp_checker.jl")
-    include("model.jl")
+if !(just_plot)
+    @everywhere include("params.jl")
+    @everywhere include("examples/$(T)_$(jobs).jl")
+    @everywhere include("fvm_temp_checker.jl")
+    @everywhere include("model.jl")
 else
-    #import vars here
-    include("plot.jl")
+    # global x_vector = load("results/vars/$(T)_$(jobs).jld", "x_vector")
+    # global soc_total = load("results/vars/$(T)_$(jobs).jld", "soc_total")
+    # @everywhere include("plot.jl")
+end
